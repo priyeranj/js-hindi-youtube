@@ -3,19 +3,19 @@
 // 7 types: String, Number, Boolean, null, undefined, Symbol, BigInt
 
 const score = 100;
-console.log(typeof score);
+//console.log(typeof score);
 
 const scoreValue = 100.3;
-console.log(typeof scoreValue);
+//console.log(typeof scoreValue);
 
 const isLoggedIn = false;
-console.log(typeof isLoggedIn);
+//console.log(typeof isLoggedIn);
 
 const outsideTemp = null;
-console.log(typeof outsideTemp);
+//console.log(typeof outsideTemp);
 
 let userEmail;
-console.log(typeof userEmail);
+//console.log(typeof userEmail);
 
 const id = Symbol('123');
 const anotherId = Symbol('123');
@@ -33,9 +33,34 @@ let myObj = {
     name :"hitesh",
     age: 22,
 }
-console.log(typeof myObj);
+// console.log(typeof myObj);
 
 const myFunction = function(){
     console.log("Hello World");
 }
-console.log(typeof myFunction);
+// console.log(typeof myFunction);
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//stack(Primitive), Heap (Non-Primitive)
+
+let myYoutubename = "hiteshchoudarydotcom";
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+// console.log(myYoutubename);
+// console.log(anothername);
+
+let userOne = {
+    email:"ranjan@google.com",
+    name:"ranjan"
+}
+
+let userTwo = userOne;
+userTwo.email="ravi@google.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
